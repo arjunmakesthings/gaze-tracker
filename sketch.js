@@ -78,10 +78,10 @@ function introBox() {
     "I built this as a dirty prototype to check the feasibility of using webgazer.js over expensive eye-tracking devices for digital product research." +
     "\n" +
     "\n" +
-    "It works, but has obvious limitations. eye movement is far too fast for a webcam to persistently & accurately keep track. However, i believe this tool can be used in scenarios where eye movement is extreme and points are looked at for longer durations." +
+    "It works, but has obvious limitations. eye movement is far too fast for a webcam to persistently & accurately keep track. However, I believe this tool can be used in scenarios where eye movement is extreme and points are looked at for longer durations." +
     "\n" +
     "\n" +
-    "Tap anywhere to continue (you'll have to do a simple callibration exercise).",
+    "Tap anywhere to continue (you'll have to do a simple calibration exercise).",
     width / 2 - 250,
     height / 2 - 400,
     500,
@@ -116,13 +116,13 @@ function callibrate() {
   textAlign (LEFT, CENTER); 
   textFont(regFont);
   text(
-    "Callibration exercise:" +
+    "Calibration exercise:" +
     "\n" +
     "\n" +
     "Click on each black circle whilst looking at them. Do this till the white circle is following your gaze accurately. " +
     "\n" +
     "\n" +
-    "Once you're done, pressing 'c' will exit the callibration mode and begin tracking. Have your screen recorder on and hop onto the webpage to be tested as soon as you press 'c'.",
+    "Once you're done, pressing 'c' will exit the calibration mode and begin tracking. Have your screen recorder on and hop onto the webpage to be tested as soon as you press 'c'. When done, come back to this page and press 't' to download a WebM video of the eye movement.",
     width / 2 - 250,
     height / 2-400,
     500,
@@ -144,10 +144,6 @@ function keyPressed() {
     callibrateToggle = !callibrateToggle;
     videoRecorder.start();
     clearedBackground = false; // Reset the flag when toggling mode
-  }
-
-  if (key === 's'){
-    videoRecorder.start();
   }
 
   if (key === 't'){
