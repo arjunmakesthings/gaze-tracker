@@ -6,7 +6,13 @@ https://github.com/user-attachments/assets/1c330598-0472-4987-a56c-31c6b4b80e91
 
 </br>
 
-All instructions are on the tool and the output is a WebM video of eye movement. One can adjust the transparency by changing the 'op' value on line 97.
+The usage is simple: 
+
+1) Download this repository
+2) Open it in a code editor
+3) Add the image you want to use to the root directory.
+4) Change line 31 `img = loadImage('dummySearch.png');` to `img = loadImage('yourImageName.format');`
+5) Run the index.html file. The rest of the instructions on how to actually track the eye is on the product itself. 
 
 
 </br>
